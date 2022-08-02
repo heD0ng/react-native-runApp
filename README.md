@@ -7,3 +7,6 @@ react-native link react-native-vector-icons
 react-native-navigation
 npx rnn-link
 重新加载后会出现白屏，需要重新修改入口文件index.js
+
+### CSS
+不能继承，需要单独设置

@@ -28,5 +28,5 @@ Navigation.registerComponent('App', () => App);
 // }
 
 Navigation.events().registerAppLaunchedListener(()=>{
-    Navigation.setRoot(MainRoot);
+    Navigation.setRoot(WelcomeScreen);
 })
