@@ -1,4 +1,4 @@
-import {Navigation} from 'react-native-navigation'
+import { Navigation } from 'react-native-navigation'
 
 import login from '../views/login';
 import code from '../views/code';
@@ -21,10 +21,10 @@ Navigation.registerComponent('App', () => App)
 export const WelcomeScreen = {
     root: {
         stack: {
-            id:'WELCOMESCREEN',
-            children:[
+            id: 'WELCOMESCREEN',
+            children: [
                 {
-                    component:{
+                    component: {
                         name: 'introductions'
                     }
                 }
@@ -36,10 +36,10 @@ export const WelcomeScreen = {
 export const LoginRoot = {
     root: {
         stack: {
-            id:'LOGIN_LAYOUT',
-            children:[
+            id: 'LOGIN_LAYOUT',
+            children: [
                 {
-                    component:{
+                    component: {
                         name: 'login'
                     }
                 }
@@ -121,16 +121,16 @@ export const MainRoot = {
 Navigation.setDefaultOptions({
     statusBar: {
         // backgroundColor:'rgba(255,255,255,0.5)'
-        backgroundColor:'red'
+        backgroundColor: 'red'
     },
-    bottomTabs:{
-        titleDisplayMode:'alwaysShow'
+    bottomTabs: {
+        titleDisplayMode: 'alwaysShow'
     },
     bottomTab: {
         fontSize: 16,
         selectedFontSize: 18,
-        textColor:'#cccccc',
-        selectedTextColor:'#0099ff',
+        textColor: '#cccccc',
+        selectedTextColor: '#0099ff',
         iconWidth: 20,
         iconHeight: 20
     }

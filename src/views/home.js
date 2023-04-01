@@ -1,13 +1,13 @@
-// Go圈首页
+// 首页
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 const home = () => {
-  return (
-    <View>
-      <Text>home</Text>
-    </View>
-  )
+    return (
+        <View>
+            <Text>home</Text>
+        </View>
+    )
 }
 
 export default home

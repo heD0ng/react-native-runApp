@@ -1,15 +1,15 @@
 import { Image, StyleSheet, Text, TouchableHighlight, View } from 'react-native'
 import React from 'react'
 import Swiper from 'react-native-swiper';
-import {Navigation} from 'react-native-navigation'
+import { Navigation } from 'react-native-navigation'
 import { LoginRoot } from '../navigation';
 
 const MySwiper = (props) => {
-    const {imgs} = props;
+    const { imgs } = props;
     const goToLogin = () => {
         Navigation.setRoot(LoginRoot)
     }
-     return (
+    return (
         <View style={styles.SwiperContainer}>
             <Swiper style={styles.Container}>
                 {
@@ -17,16 +17,16 @@ const MySwiper = (props) => {
                         return (
                             <View key={item.id} style={styles.SwiperItem}>
                                 <View>
-                                    <Image 
-                                        style={styles.SwiperItemImg} 
+                                    <Image
+                                        style={styles.SwiperItemImg}
                                         source={item.image}>
                                     </Image>
                                 </View>
                                 {
                                     item.id == 3 && (
-                                        <TouchableHighlight 
+                                        <TouchableHighlight
                                             onPress={() => goToLogin()}
-                                            activeOpacity = {0.5}
+                                            activeOpacity={0.5}
                                             underlayColor='#F27600'
                                             style={styles.SwiperBtn}
                                         >
@@ -51,16 +51,16 @@ export default MySwiper
 
 const styles = StyleSheet.create({
     SwiperContainer: {
-        flex:1,
+        flex: 1,
         backgroundColor: 'red'
     },
     Container: {
 
     },
     SwiperItem: {
-        flex:1,
-        justifyContent:'center',
-        alignItems:'center'
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     SwiperItemImg: {
         width: 200,

@@ -3,11 +3,11 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 const code = () => {
-  return (
-    <View>
-      <Text>code</Text>
-    </View>
-  )
+    return (
+        <View>
+            <Text>code</Text>
+        </View>
+    )
 }
 
 export default code
